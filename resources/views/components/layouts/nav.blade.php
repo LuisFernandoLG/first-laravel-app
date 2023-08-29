@@ -4,8 +4,6 @@
 
             <li><a class="nav-container__item {{ request()->routeIs('home') ? 'nav-container__iten-active' : '' }}"
                     href=" {{ route('home') }} ">Home</a></li>
-            <li><a class="nav-container__item {{ request()->routeIs('posts.*') ? 'nav-container__iten-active' : '' }}"
-                    href=" {{ route('posts.index') }} ">Blog</a></li>
             <li><a class="nav-container__item {{ request()->routeIs('about') ? 'nav-container__iten-active' : '' }}"
                     href=" {{ route('about') }} ">About</a></li>
             <li><a class="nav-container__item {{ request()->routeIs('contact') ? 'nav-container__iten-active' : '' }}"
@@ -22,6 +20,8 @@
             </li>
         @endauth
         @guest
+            <li><a class="nav-container__item {{ request()->routeIs('posts.*') ? 'nav-container__iten-active' : '' }}"
+                    href=" {{ route('posts.index') }} ">Blog</a></li>
             <li><a class="nav-container__item {{ request()->routeIs('register') ? 'nav-container__iten-active' : '' }}"
                     href=" {{ route('register') }} ">Register</a></li>
             <li><a class="nav-container__item {{ request()->routeIs('login') ? 'nav-container__iten-active' : '' }}"
