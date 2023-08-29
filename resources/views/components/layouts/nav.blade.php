@@ -10,6 +10,8 @@
                     href=" {{ route('contact') }}">Contact</a></li>
             <li><a class="nav-container__item {{ request()->routeIs('phones.*') ? 'nav-container__iten-active' : '' }}"
                     href=" {{ route('phones.index') }}">Phones</a></li>
+            <li><a class="nav-container__item {{ request()->routeIs('posts.*') ? 'nav-container__iten-active' : '' }}"
+                    href=" {{ route('posts.index') }} ">Blog</a></li>
 
             {{-- LOGOUT FORM link --}}
             <li>
