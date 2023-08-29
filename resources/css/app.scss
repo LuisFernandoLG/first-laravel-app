@@ -1,0 +1,140 @@
+.page{
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;   
+}
+
+
+.nav{
+    border: 1px solid gray;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-container__item{
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-container__iten-active{
+    background-color: gray;
+    color: white;
+}
+
+.post-card{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.posts-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+.post-card > .options{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.post-card__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.post-card__body{
+    font-size: 1rem;
+}
+
+.options__edit{
+    color: green;
+
+}
+
+.options__delete{
+    color: red;
+}
+
+.options__edit, .options__delete{
+    font-size: 1.5rem;
+    // margin: 0 0;
+    // color: blue;
+}
+
+button, a, form{
+    margin: 0;
+    padding: 0;
+    height: min-content;
+}
+
+.post-card > .options > .options__edit:hover, .post-card > .options > .options__delete:hover{
+    cursor: pointer;
+}
+
+.btn{
+    background: #949191;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.new-btn{
+    background: #89c121;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background: #26b9cd;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-msg{
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+// fields
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.field > label{
+    margin-bottom: 0.5rem;
+
+}
+
+.field > input, .field > textarea{
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.field > textarea{
+    resize: none;
+}
